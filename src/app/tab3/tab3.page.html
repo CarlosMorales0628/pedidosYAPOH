@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+      Configuración
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+      <ion-label>Notificaciones</ion-label>
+      <ion-toggle color='danger'></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mostrar alertas sobre<br> descuentos proximos</ion-label>
+      <ion-toggle color='danger'></ion-toggle>
+    </ion-item>
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <ion-button color="danger"
+            (click)="verActionSheet()" expand="full">Configuraciones Avanzadas</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+      pedidos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+      <ion-select okText="Seleccionar" aria-selected="" cancelText="Cancelar" placeholder="Eliga un combo del menú" [(ngModel)]="combo">
+          <ion-select-option value="2000">Combo Hambur. 1</ion-select-option>
+          <ion-select-option value="2500">Combo Hambur. 2</ion-select-option>
+          <ion-select-option value="3000">Combo Hambur. 3</ion-select-option>
+          <ion-select-option value="3500">Combo Hambur. 4</ion-select-option>
+          <ion-select-option value="4000">Combo Hambur. 5</ion-select-option>
+          <ion-select-option value="1800">Combo Completo 1</ion-select-option>
+          <ion-select-option value="2300">Combo Completo 2</ion-select-option>
+          <ion-select-option value="2800">Combo Completo 3</ion-select-option>
+          <ion-select-option value="3300">Combo Completo 4</ion-select-option>
+          <ion-select-option value="3800">Combo Completo 5</ion-select-option>
+          <ion-select-option value="1900">Combo ensalada 1</ion-select-option>
+          <ion-select-option value="1850">Combo wrap 1</ion-select-option>
+          <ion-select-option value="2250">combo wrap 2</ion-select-option>
+        </ion-select>     
+      <br>
+      <ion-item>
+          <ion-list>
+              <ion-radio-group [(ngModel)]="Coca">
+                <ion-list-header>
+                  <ion-label>Seleccione su bebida</ion-label>
+                </ion-list-header>
+            
+                <ion-item>
+                  <ion-label>Coca cola</ion-label>
+                  <ion-radio slot="start" value="Coca" checked></ion-radio>
+                </ion-item>
+            
+                <ion-item>
+                  <ion-label>Fanta</ion-label>
+                  <ion-radio slot="start" value="Fanta"></ion-radio>
+                </ion-item>
+            
+                <ion-item>
+                  <ion-label>Sprite</ion-label>
+                  <ion-radio slot="start" value="Sprite"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-list>
+      </ion-item>
+      <br>
+        <ion-select okText="Seleccionar" cancelText="Cancelar" placeholder="cantidad de pedidos" [(ngModel)]="unidades">
+          <ion-select-option value="1">1 pedido</ion-select-option>
+          <ion-select-option value="2">2 pedidos</ion-select-option>
+          <ion-select-option value="3">3 pedidos</ion-select-option>
+          <ion-select-option value="4">4 pedidos</ion-select-option>
+          <ion-select-option value="5">5 pedidos</ion-select-option>
+        </ion-select>
+      <br>
+      <ion-button expand="full" color="danger" (click)="pedido()">Enviar pedido</ion-button> 
+</ion-content>
+ 
